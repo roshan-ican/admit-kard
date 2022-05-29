@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
@@ -20,8 +20,10 @@ const courseLevel = [
 
 const animatedComponents = makeAnimated();
 
+// const [first, setfirst] = useState(second);
+
 export function Form() {
-  const { register, handleSubmit, control } = useForm();
+  const { register, handleSubmit } = useForm();
 
   return (
     <div>
